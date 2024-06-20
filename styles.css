@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.name-container {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    margin-right: 20px; /* Adjust the margin as needed for spacing between name and links */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #808080;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+nav ul li.active a {
+    color: #000;
+}
+
+.main-content.home {
+    display: flex; /* Set display to flex */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    align-items: center; /* Center items along the cross axis */
+    padding: 20px;
+}
+
+.left-section {
+    width: 40%;
+}
+
+.left-section img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.right-section {
+    width: 60%;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.right-section p {
+    font-size: 30px;
+}
+
+.right-section h2 {
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.social-links img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* ... For project section */
+
+.project-section {
+    text-align: center;
+    margin-bottom: 40px;
+    border: 2px solid #ddd; /* Add a border for a professional look */
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.project-section:hover {
+    transform: scale(1.05); /* Enlarge the project section on hover for a subtle effect */
+}
+
+.project-section h2 {
+    font-weight: bold;
+    color: #333; /* Darken the heading color for better readability */
+}
+
+.project-details {
+    margin-top: 20px;
+}
+
+.project-details img {
+    width: 100%;
+    max-width: 800px; /* Increase the maximum width for larger images */
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.caption {
+    margin-top: 10px;
+    font-style: italic;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: #555; /* Adjust the caption color for better visibility */
+}
+
+.details-box {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px; /* Increase padding for a cleaner look */
+    border-radius: 8px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* For publications tab*/
+.main-content.publications {
+    text-align: center;
+}
+
+.publications-box {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: justify;
+}
+
+.publications-box ul {
+    padding: 10px 0; /* Add padding to the top and bottom of the ul */
+}
+
+.publications-box li {
+    margin-bottom: 10px; /* Add margin to the bottom of each li element */
+}
+
+/* For News tab*/
+

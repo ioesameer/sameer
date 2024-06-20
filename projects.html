@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional Styles for Projects */
+        .project-section {
+            background-color: #ecf0f1;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-section:hover {
+            transform: scale(1.03); /* Slightly enlarge on hover for a subtle effect */
+        }
+
+        .project-section h2 {
+            font-weight: bold;
+            color: #3498db;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .project-details {
+            margin-top: 20px;
+        }
+
+        .project-details img {
+            width: 100%;
+            max-width: 800px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-style: italic;
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+            color: #555;
+        }
+
+        .details-box {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            width: 70%;
+            margin: 0 auto;
+            text-align: justify;
+        }
+    </style>
+    <title>Sameer Pokhrel - Projects</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="SameerSmall.jpg" alt="Sameer's Picture" class="profile-pic">
+            <div class="name-container">
+                <h1>Sameer Pokhrel</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="projects.html">Projects</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-content projects">
+        <!-- First Project Section -->
+        <div class="project-section">
+            <h2>Use of Extremum Seeking Control (ESC) for dynamic soaring</h2>
+            <div class="project-details">
+                <img src="DS.jpg" alt="Four characteristic flight phases">
+                <p class="caption">Fig: Four characteristic flight phases (1-4) of dynamic soaring maneuver (shown by dark blue trajectory) performed by an albatross in the presence of logistic wind distribution (shown in green) above the surface of an ocean.</p>
+                <div class="details-box">
+                    <p>Dynamic soaring is a remarkable technique employed by soaring birds like albatrosses to harness energy from the atmospheric wind gradient and sustain flight without almost flapping their wings. This phenomenon has intrigued researchers across multiple disciplines including biology, physics, applied mathematics, and especially aerospace and control engineering due to the potential of inspiring new technologies that contribute to a more sustainable aviation industry. Significant work has been done in the literature to replicate dynamic soaring using optimal control frameworks. However, these approaches have limitations as they are non-real-time, model-dependent, and computationally expensive. In this project, we develop a categorically-distinguished, autonomous, real-time, and model-free approach for mimicking dynamic soaring utilizing the adaptive control method of Extremum Seeking Control (ESC).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Project Section -->
+        <div class="project-section">
+            <h2>Control-affine Extremum Seeking with Attenuating Oscillations</h2>
+            <div class="project-details">
+                <img src="ESC.jpg" alt="Multi-agent system with attenuating oscillation.">
+                <p class="caption">Fig: Multi-agent system with attenuating oscillation</p>
+                <div class="details-box">
+                    <p>Control-affine Extremum Seeking Control (ESC) systems have been increasingly studied and applied
+                         in the last decade. Similar to classic ESC-related structures, control-affine ESC systems are 
+                         operable by assuming access to measurements of the objective function, and not necessarily its 
+                         expression. In contrast to classic ESC-related structures, in a control-affine ESC, the objective
+                          function -- or a map of it -- is incorporated within the system's vector fields themselves. 
+                          This has invoked the use of tools from geometric control theory, namely Lie Bracket Systems (LBSs).
+                           Said LBSs play a crucial role in the stability and performance characterization of ESCs.
+                            In a recent effort, many control-affine ESC structures have been generalized in a unifying class 
+                            and analyzed through LBSs. In addition, this generalized class converges asymptotically to the 
+                            extremum point; however, the extremum point has to be known a priori, and guaranteeing vanishing 
+                            control input at the extremum point requires the application of strong conditions. In this paper,
+                             we introduce a LBS-based ESC structure that: (1) does not require the extremum point a priori,
+                              (2) its oscillations attenuate structurally via a novel application of a geometric-based Kalman 
+                              filter estimating LBSs; and (3) its stability is characterized by a time-dependent (one bound) 
+                              condition that is verifiable via simulations and relaxed when compared to the generalized approach
+                               mentioned earlier. We provide numerical simulations of three problems to demonstrate the ability
+                                of our proposed ESC; these problems cannot be solved with vanishing oscillations using the 
+                                above-mentioned generalized approach in literature.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Project Section -->
+        <div class="project-section">
+            <h2>Use of Fuzzy PID Controller for Pitch Control of a Wind Turbine.</h2>
+            <div class="project-details">
+                <img src="WindTurbine2.jpeg" alt="A wind turbine">
+                <p class="caption">Fig: A wind turbine.</p>
+                <div class="details-box">
+                    <p>In this project, state-of-the-art physical modeling of type-3 DFIG wind turbine systems was 
+                        combined with newly developed genetic fuzzy learning algorithms. The goal was to investigate
+                         whether training genetic fuzzy systems in a physics-informed simulation environment can enhance
+                          wind turbine power generation through improved pitch control. Various wind profiles were applied 
+                          to the physical model, and the state space of the differential-algebraic model and wind speed were
+                           used as training inputs. This approach identified near-optimal pitch control actions to minimize 
+                           overshooting, fluctuations, and stabilization time of the turbine's power output. Results were
+                            compared with the industry-standard PID pitch controller, showing very promising outcomes.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth Project Section -->
+        <div class="project-section">
+            <h2>Distributed quadrotor UAV tracking using a team of unmanned ground vehicles.</h2>
+            <div class="project-details">
+                <img src="UAV_UGV.jpeg" alt="Unmanned ground vehicles tracking a UAV">
+                <p class="caption">Fig: Unmanned ground vehicles tracking a UAV.</p>
+                <div class="details-box">
+                    <p>In this project, an algorithm to optimally track a non-cooperative quadrotor using a team of 
+                        Unmanned Ground Vehicles (UGVs) was developed. These UGVs are equipped with GPS and radar capable
+                         of sensing range, azimuth angle, and elevation angle measurements. First, a distributed information
+                          filter algorithm was created for each UGV to locally estimate the quadrotor's position and velocity
+                           using its data and information from neighboring UGVs. The information from various UGVs was then
+                            fused using a Consensus Filter to ensure convergence on the quadrotor's state estimate. 
+                            The estimation accuracy of the consensus filter depends on the relative positions of
+                             the sensors, necessitating a control policy for optimal UGV configuration to maximize
+                              measurement utility. A Model Predictive Controller (MPC) was developed to optimally control 
+                              the UGVs, enhancing state estimation. By defining an appropriate cost function and optimization 
+                              algorithm in MPC, the UGVs' paths were controlled to improve the accuracy of estimating the
+                               quadrotor's position and velocity.</p>
+                </div>
+            </div>
+        </div>
+         <!-- Fifth Project Section -->
+         <div class="project-section">
+            <h2>Shorter path design of an underactuated satellite in MATLAB.</h2>
+            <div class="project-details">
+                <img src="Satellite.jpeg" alt="A satellite">
+                <p class="caption">Fig: A satellite.</p>
+                <div class="details-box">
+                    <p>Failure of control about an axis leads to an increased rotational path length to achieve the target attitude,
+                         as only two of the principal axes can be used. However, this path length can be minimized by choosing the
+                          optimal number of submaneuvers. In this project, the optimal number of such subrotations and corresponding
+                           rotation angles were derived to minimize the rotational path length. The Global Optimization Toolbox from
+                            MATLAB was used to obtain the desired solution.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sixth Project Section -->
+        <div class="project-section">
+            <h2>Formulation of an aircraft performance calculation and optimization tool for aircrafts.</h2>
+            <div class="project-details">
+                <img src="Aircraft.jpeg" alt="An aircraft">
+                <p class="caption">Fig: An aircraft.</p>
+                <div class="details-box">
+                    <p>In this project, an effective and efficient tool is developed that calculates performance parameters for
+                         different flight phases such as take-off, climb, cruise, holding, descent, and landing of various airplanes.
+                          This tool aids operators and aviation service providers with quick estimations of operational requirements 
+                          and performance data. Additionally, it includes optimization methods to estimate the altitude for minimum 
+                          fuel consumption and the Maximum Takeoff Weight (MTOW) an aircraft can have for the available runway length
+                           at an airport. Besides take-off and landing, which are critical flight phases with high parametric
+                            requirements, the tool estimates the necessary fuel and flight parameters for climb, cruise, and descent.
+                             This supports flight operations engineers in decision-making, managing critical flying situations,
+                              and planning flight operations for various flight phases.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seventh Project Section -->
+        <div class="project-section">
+            <h2>Trajectory tracking of an Autonomous Underwater Vehicle.</h2>
+            <div class="project-details">
+                <img src="AUV.jpeg" alt="An AUV">
+                <p class="caption">Fig: An autonomous underwater vehicle.</p>
+                <div class="details-box">
+                    <p>This project proposes a method for trajectory tracking of an Autonomous Underwater Vehicle (AUV).
+                         The vehicle's trajectory is a time-parameterized reference geometric path to follow. A nonlinear,
+                          model-based controller was developed to drive the system along the desired trajectory. A simulation
+                           was performed to validate the control law.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://linkedin.com/in/sameer-pokhrel-708150156//" target="_blank" rel="noopener noreferrer"><img src="linkedIn.png" alt="LinkedIn"></a>
+                <a href="https://scholar.google.com/citations?hl=en&user=gLef9QkAAAAJ" target="_blank" rel="noopener noreferrer"><img src="googleScholar.png" alt="Google Scholar"></a>
+                <a href="mailto:sameerpokhrel1111@gmail.com"><img src="email.png" alt="Email"></a>
+            </div>
+            <p>&copy; 2024 Sameer Pokhrel</p>
+        </div>
+    </footer>
+
+</body>
+</html>

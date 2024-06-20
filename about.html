@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional Styles */
+        .cv-link {
+            margin-top: 10px;
+            text-align: right;
+        }
+
+        .cv-box {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cv-box:hover {
+            background-color: #2980b9;
+        }
+
+        /* Stylish Section Styles */
+        .about-section {
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .about-section h2 {
+            color: #333;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .about-section p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .about-section:hover {
+            transform: scale(1.005); /* Slightly enlarge on hover for a subtle effect */
+        }
+
+
+        /* Research Interests List Styles */
+        .about-section ul {
+            list-style: none; /* Remove default list styling */
+            padding: 0;
+            margin: 0;
+        }
+
+        .about-section ul li {
+            background-color: #f9f9fa; /* Background color for list items */
+            color: #0a0101; /* Text color for list items */
+            padding: 10px; /* Padding inside each list item */
+            margin: 5px 0; /* Space between list items */
+            border-radius: 5px; /* Rounded corners for list items */
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        .about-section ul li:hover {
+            background-color: #98c1dd; /* Hover effect background color */
+        }
+    </style>
+    <title>Sameer Pokhrel - About Me</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="SameerSmall.jpg" alt="Sameer's Picture" class="profile-pic">
+            <div class="name-container">
+                <h1>Sameer Pokhrel</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li class="active"><a href="about.html">About Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-content about">
+        <div class="cv-link">
+            <a href="https://drive.google.com/file/d/1OVG500Xfr0WN7DbospxdU--RXtJPxlUY/view" target="_blank" rel="noopener noreferrer" class="cv-box">
+                CV
+            </a>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="about-section">
+            <h2>Experience</h2>
+            <h3>Instructor</h3>
+                <p>Summer 2023 <br>
+                Taught Engineering Dynamics to undergraduate students from Department of Aerospace Engineering, University of Cincinnati
+                in Summer 2023.</p>
+
+            <br>
+            <h3>Research Assistant</h3>
+                <p>(2021-2024) <br>
+                Researched nonlinear control techniques and their applications in multi-vehicle systems, bio-inspired systems, and wind turbines
+                on Modeling, Dynamics and Control Lab, Department of Aerospace Engineering, University of Cincinnati under the supervision of 
+                Dr. Sameh A. Eisa. </p>
+            <br>
+
+            <h3>Teaching Assistant</h3>
+                <p>(2019-2020)<br>
+                Responsible for grading homework and providing the lecture in the absence of the instructor for courses:
+                 Thermodynamics and Energy Systems, Probabilistic and Economic Engineering, and Solid Mechanics in
+                  Department of Aerospace Engineering, University of Cincinnati.</p>
+
+            <br>
+            <h3>Design Engineer, National Innovation Center</h3>
+                <p>(2018-2019)<br>
+                Responsible for research, design, and fabrication of prototypes of fixed-wing UAVs for medicine delivery in rural areas of Nepal.
+                </p>
+        </div>
+
+        <!-- Education Section -->
+        <div class="about-section">
+            <h2>Education</h2>
+            <h3>University of Cincinnati</h3>
+                <p>2019-2024 <br>
+                 Successfully defended PhD in Aerospace Engineering (Dynamics and Control) GPA: 4. </p>
+
+            <br>
+            <h3>Tribhuvan University, Pulchowk Campus</h3>
+                <p>(2013-2017) <br>
+                Completed Bachelor's degree in Mechanical Engineering. </p>
+            <br>
+        </div>
+
+        <!-- Honors and Awards Section -->
+        <div class="about-section">
+            <h2>Honors and Awards</h2>
+            <ul>
+                <li>Selected as graduate student Engineer of the Month for April 2024.</li>
+                <li>Awarded by SIAM Student Travel Award for SIAM Conference on Control and its Applications 2023.</li>
+                <li>Selected to participate in the highly competitive Graduate Student Mathematical Modeling Camp (GSMMC) and the Mathematical Problems in Industry Workshop for 2023.</li>
+                <li>Awarded by SIAM Student Travel Award for SIAM Conference on the Life Sciences (LS22) and 2022 SIAM Annual Meeting (AM22).</li>
+                <li>Invited to write a news article on the SIAM News blogs titled “Albatross Optimized Flight Physics: A Natural Extremum Seeking System?”</li>
+            </ul>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="about-section">
+            <h2>Skills</h2>
+            <ul>
+                <li> Matlab </li>
+                <li> Simulink </li>
+                <li> Python </li>
+                <li> MS Office </li>
+                <li> CATIA </li>
+            </ul>
+        </div>
+
+        <!-- Research Interests Section -->
+        <div class="about-section">
+            <h2>Research Interests</h2>
+            <ul>
+                <li> Nonlinear dynamics and control </li>
+                <li>  Extremum seeking control</li>
+                <li>  Estimation </li>
+                <li>  Optimization </li>
+                <li>  Bio-inspired systems </li>
+                <li>  UAVs </li>
+                <li>  Wind turbines </li>
+                <li>  Robotics </li>
+                <li>  Machine Learning</li>
+            </ul>
+        </div>
+
+        <!-- Add more sections as needed -->
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://linkedin.com/in/sameer-pokhrel-708150156//" target="_blank" rel="noopener noreferrer"><img src="linkedIn.png" alt="LinkedIn"></a>
+                <a href="https://scholar.google.com/citations?hl=en&user=gLef9QkAAAAJ" target="_blank" rel="noopener noreferrer"><img src="googleScholar.png" alt="Google Scholar"></a>
+                <a href="mailto:sameerpokhrel1111@gmail.com"><img src="email.png" alt="Email"></a>
+            </div>
+            <p>&copy; 2024 Sameer Pokhrel</p>
+        </div>
+    </footer>
+
+</body>
+</html>
